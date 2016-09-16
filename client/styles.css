@@ -1,28 +1,11 @@
-/* your beautiful css styling goes here! */
-
-/* Note: an asteroid image is included in this repo.
-Feel free to use it if you like. */
-/* START SOLUTION */
+html, body, .board, .board svg {
+  height:100%;
+  width:100%;
+}
 body {
   margin: 0;
   font-family: helvetica;
   position: relative;
-}
-iframe {
-  position: absolute;
-  z-index: 1;
-}
-.mouse {
-  position: absolute;
-  background-color: orange;
-}
-.astroid {
-  background-image: url('asteroid.png');
-  background-size: 100% 100%;
-  position: absolute;
-}
-.vis {
-  background-color: black;
 }
 .scoreboard {
   width: 250px;
@@ -39,4 +22,23 @@ iframe {
   font-size: 25px;
   float: right;
 }
-/* END SOLUTION */
+
+svg g image {
+  transform-origin: 50% 50%;
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

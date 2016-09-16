@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' type='css' href='styles.css'>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
   </head>
   <body>
-    <div class="scoreboard">
-      <!-- Modify the scoreboard when important events occur in your game! -->
-      <div class="highscore">High score: <span>0</span></div>
-      <div class="current">Current score: <span>0</span></div>
-      <div class="collisions">Collisions: <span>0</span></div>
+
+    <div class="board">
+      <div class="scoreboard">
+        <!-- Modify the scoreboard when important events occur in your game! -->
+        <div class="highscore">High score: <span></span></div>
+        <div class="current">Current score: <span></span></div>
+        <div class="collisions">Collisions: <span></span></div>
+      </div>
+      <svg>
+        <image xlink:href="http://llerrah.com/images/retired_man_dancing_happy_hg_clr.gif" x="50%" y="50%" height="50px" width="27px" class="mouse"></image>
+        <g height="100%" width="100%"></g>
+      </svg>
     </div>
-    <div class="board"><div class="mouse"></div></div>
     <script src="lib/d3.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-drag.v1.js" charset="utf-8"></script>
     <script src='watchout.js'></script>
   </body>
 </html>
