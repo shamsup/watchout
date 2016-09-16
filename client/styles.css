@@ -1,0 +1,42 @@
+/* your beautiful css styling goes here! */
+
+/* Note: an asteroid image is included in this repo.
+Feel free to use it if you like. */
+/* START SOLUTION */
+body {
+  margin: 0;
+  font-family: helvetica;
+  position: relative;
+}
+iframe {
+  position: absolute;
+  z-index: 1;
+}
+.mouse {
+  position: absolute;
+  background-color: orange;
+}
+.astroid {
+  background-image: url('asteroid.png');
+  background-size: 100% 100%;
+  position: absolute;
+}
+.vis {
+  background-color: black;
+}
+.scoreboard {
+  width: 250px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  border-radius: 3px;
+}
+.scoreboard div {
+  line-height: 33px;
+  font-size: 25px;
+  float: right;
+}
+/* END SOLUTION */
